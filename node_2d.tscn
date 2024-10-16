@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://o6crcga3pjbs"]
+
+[ext_resource type="PackedScene" uid="uid://datj6djevtrh4" path="res://player.tscn" id="1_6y42i"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2mf2v"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_6y42i")]
+position = Vector2(543, 192)
+walkSpeed = 100
+jumpStrength = 240
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+scale = Vector2(48.5354, 1.05155)
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(560, 265)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_2mf2v")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_left = -893.0
+offset_right = -853.0
+offset_bottom = 40.0
+scale = Vector2(48.5354, 1.05155)
+color = Color(0.127736, 0.127736, 0.127736, 1)

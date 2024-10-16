@@ -1,0 +1,319 @@
+[gd_scene load_steps=8 format=3 uid="uid://cs5pu1wjq612u"]
+
+[ext_resource type="Script" path="res://cutscene.gd" id="1_5c3a2"]
+[ext_resource type="FontFile" uid="uid://dv12bcpg3py82" path="res://Silkscreen/slkscr.ttf" id="2_go44e"]
+[ext_resource type="FontFile" uid="uid://bcvmpokuqpm0q" path="res://Silkscreen/slkscrb.ttf" id="3_p6s2p"]
+
+[sub_resource type="Animation" id="Animation_dbg4t"]
+resource_name = "Intro"
+length = 8.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fwhei"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Main Menu/Label:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(342, 719)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Main Menu/Play:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(556, 804)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Main Menu/Options:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(539, 789)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Main Menu/Achievments:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(515.5, 789)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Main Menu/Quit:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(553, 789)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ColorRect:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gr7pt"]
+resource_name = "Menu"
+length = 2.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main Menu/Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.189464, 0.189464),
+"update": 0,
+"values": [Vector2(342, 719), Vector2(342, 119)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Main Menu/Play:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(0.189464, 0.189464, 0.189464),
+"update": 0,
+"values": [Vector2(556, 804), Vector2(556, 804), Vector2(556, 326)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Main Menu/Options:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 1.5),
+"transitions": PackedFloat32Array(0.189464, 0.189464, 0.189464),
+"update": 0,
+"values": [Vector2(539, 789), Vector2(539, 789), Vector2(539, 376)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Main Menu/Achievments:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.5, 2),
+"transitions": PackedFloat32Array(0.189464, 0.189464, 0.189464),
+"update": 0,
+"values": [Vector2(515.5, 789), Vector2(515.5, 789), Vector2(516, 424)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Main Menu/Quit:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2, 2.5),
+"transitions": PackedFloat32Array(0.189464, 0.189464, 0.189464),
+"update": 0,
+"values": [Vector2(553, 789), Vector2(553, 789), Vector2(553, 484)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ColorRect:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g3gtj"]
+_data = {
+"Intro": SubResource("Animation_dbg4t"),
+"Menu": SubResource("Animation_gr7pt"),
+"RESET": SubResource("Animation_fwhei")
+}
+
+[node name="Cutscene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5c3a2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g3gtj")
+}
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.31713
+anchor_right = 1.0
+anchor_bottom = 0.31713
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_go44e")
+theme_override_font_sizes/font_size = 22
+text = "\"The Skies weep for the fallen, but the Earth never forgets their bones\""
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Main Menu" type="Control" parent="."]
+z_index = -40
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 119.0
+offset_right = 235.0
+offset_bottom = 168.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_p6s2p")
+theme_override_font_sizes/font_size = 48
+text = "Weeping skies"
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 2.00302
+offset_right = 21.0
+offset_bottom = 33.003
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play
+"
+
+[node name="Options" type="Button" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -37.0
+offset_top = -271.997
+offset_right = 33.0
+offset_bottom = -240.997
+grow_horizontal = 2
+grow_vertical = 0
+text = "Options"
+
+[node name="Achievments" type="Button" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -223.998
+offset_right = 57.0
+offset_bottom = -192.998
+grow_horizontal = 2
+grow_vertical = 0
+text = "Achievements"
+
+[node name="Quit" type="Button" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -23.0
+offset_top = -163.998
+offset_right = 19.0
+offset_bottom = -132.998
+grow_horizontal = 2
+grow_vertical = 0
+text = "Quit
+"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -5
+offset_right = 1188.0
+offset_bottom = 687.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_cutscene_finished"]
